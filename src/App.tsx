@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import ErrorBoundary from './components/ErrorBoundary';
+import ChatBot from './components/ChatBot';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
@@ -29,6 +30,7 @@ function App() {
             <Route path="/leaderboard" element={<Leaderboard />} />
             <Route path="/schedule" element={<Schedule />} />
           </Routes>
+          <ChatBot />
         </div>
       </Router>
     </ErrorBoundary>
